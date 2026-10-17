@@ -1,5 +1,11 @@
 # Pet Care
 
+[![CI](https://github.com/pietro379/pet-care-app/actions/workflows/ci.yml/badge.svg)](https://github.com/pietro379/pet-care-app/actions/workflows/ci.yml)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)
+![Material 3](https://img.shields.io/badge/Material-3-6750A4)
+![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-3ddc84)
+
 Evcil hayvanlar için sağlık takibi ve sosyal ağ uygulaması. Flutter ile geliştirildi.
 
 Veteriner geçmişini ve yaklaşan randevuları takip edin, diğer evcil hayvan sahipleriyle tanışın, yakındaki veteriner kliniklerini haritada görün.
@@ -49,6 +55,14 @@ flutter run -d chrome
 
 Demo aşamasında telefon alanında `555 555 55 55`, doğrulama ekranında `123456` silik ipucu olarak gösterilir. Doğrulama için geçerli kod `123456`'dır.
 
+## Testler
+
+```bash
+flutter test
+```
+
+Tarih biçimleri, kayıt modelinin JSON gidiş-dönüşü ve veteriner deposunun mantığı (son ziyaret, yaklaşan randevu, "son seans" kaydı) birim testleriyle doğrulanır. GitHub Actions her push ve pull request'te analiz ve testleri çalıştırır.
+
 ## Proje Yapısı
 
 ```text
@@ -67,3 +81,10 @@ lib/
 
 - Akış, klinik ve veteriner kayıtları şimdilik demo verilerle çalışır; veri kaynakları `services/` altında arayüzden ayrılmıştır, bir sunucuya bağlanırken yalnızca bu katman değişir.
 - Harita karoları OpenStreetMap'in herkese açık sunucusundan gelir. Yayına almadan önce kendi karo sağlayıcınıza geçmeniz önerilir.
+
+## Sıradaki fikirler
+
+- [ ] Gerçek bir sunucuya bağlanma (kimlik doğrulama, gönderiler, sohbet)
+- [ ] Randevu için hatırlatma bildirimi
+- [ ] Kendi harita karo sağlayıcısı
+- [ ] Birden fazla evcil hayvan profili
