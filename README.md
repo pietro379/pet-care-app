@@ -6,6 +6,8 @@
 ![Material 3](https://img.shields.io/badge/Material-3-6750A4)
 ![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-3ddc84)
 
+**[⬇ Android APK'yı indir](https://github.com/pietro379/pet-care-app/releases/latest)** · demo verilerle çalışır, hesap gerekmez
+
 Evcil hayvanlar için sağlık takibi ve sosyal ağ uygulaması. Flutter ile geliştirildi.
 
 Veteriner geçmişini ve yaklaşan randevuları takip edin, diğer evcil hayvan sahipleriyle tanışın, yakındaki veteriner kliniklerini haritada görün.
@@ -52,6 +54,8 @@ Ekran görüntüleri uygulamanın web derlemesinden alınmış ve cihaz çerçev
 flutter pub get
 flutter run -d chrome
 ```
+
+Release APK için: `flutter build apk --release`. Uygulama ikonları `flutter test tool/icon/generate_icons_test.dart` ile üretilir (ek paket gerekmez).
 
 Demo aşamasında telefon alanında `555 555 55 55`, doğrulama ekranında `123456` silik ipucu olarak gösterilir. Doğrulama için geçerli kod `123456`'dır.
 
